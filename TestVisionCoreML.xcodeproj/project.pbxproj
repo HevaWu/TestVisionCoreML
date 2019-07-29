@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		F086771922EE963800B5AB21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F086771822EE963800B5AB21 /* AppDelegate.swift */; };
-		F086771B22EE963800B5AB21 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F086771A22EE963800B5AB21 /* FirstViewController.swift */; };
-		F086771D22EE963800B5AB21 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F086771C22EE963800B5AB21 /* SecondViewController.swift */; };
+		F086771B22EE963800B5AB21 /* ChoosePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F086771A22EE963800B5AB21 /* ChoosePhotoViewController.swift */; };
+		F086771D22EE963800B5AB21 /* TakePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F086771C22EE963800B5AB21 /* TakePhotoViewController.swift */; };
 		F086772022EE963800B5AB21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F086771E22EE963800B5AB21 /* Main.storyboard */; };
 		F086772222EE963900B5AB21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F086772122EE963900B5AB21 /* Assets.xcassets */; };
 		F086772522EE963900B5AB21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F086772322EE963900B5AB21 /* LaunchScreen.storyboard */; };
+		F086772D22EE9A6B00B5AB21 /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F086772C22EE9A6B00B5AB21 /* CGImagePropertyOrientation+UIImageOrientation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F086771522EE963800B5AB21 /* TestVisionCoreML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestVisionCoreML.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F086771822EE963800B5AB21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F086771A22EE963800B5AB21 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		F086771C22EE963800B5AB21 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		F086771A22EE963800B5AB21 /* ChoosePhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosePhotoViewController.swift; sourceTree = "<group>"; };
+		F086771C22EE963800B5AB21 /* TakePhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakePhotoViewController.swift; sourceTree = "<group>"; };
 		F086771F22EE963800B5AB21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F086772122EE963900B5AB21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F086772422EE963900B5AB21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F086772622EE963900B5AB21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F086772C22EE9A6B00B5AB21 /* CGImagePropertyOrientation+UIImageOrientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGImagePropertyOrientation+UIImageOrientation.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +59,10 @@
 			isa = PBXGroup;
 			children = (
 				F086771822EE963800B5AB21 /* AppDelegate.swift */,
-				F086771A22EE963800B5AB21 /* FirstViewController.swift */,
-				F086771C22EE963800B5AB21 /* SecondViewController.swift */,
+				F086771A22EE963800B5AB21 /* ChoosePhotoViewController.swift */,
+				F086771C22EE963800B5AB21 /* TakePhotoViewController.swift */,
 				F086771E22EE963800B5AB21 /* Main.storyboard */,
+				F086772C22EE9A6B00B5AB21 /* CGImagePropertyOrientation+UIImageOrientation.swift */,
 				F086772122EE963900B5AB21 /* Assets.xcassets */,
 				F086772322EE963900B5AB21 /* LaunchScreen.storyboard */,
 				F086772622EE963900B5AB21 /* Info.plist */,
@@ -138,9 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F086771D22EE963800B5AB21 /* SecondViewController.swift in Sources */,
+				F086772D22EE9A6B00B5AB21 /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */,
+				F086771D22EE963800B5AB21 /* TakePhotoViewController.swift in Sources */,
 				F086771922EE963800B5AB21 /* AppDelegate.swift in Sources */,
-				F086771B22EE963800B5AB21 /* FirstViewController.swift in Sources */,
+				F086771B22EE963800B5AB21 /* ChoosePhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

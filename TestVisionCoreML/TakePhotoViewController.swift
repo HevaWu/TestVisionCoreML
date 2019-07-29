@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  TakePhotoViewController.swift
 //  TestVisionCoreML
 //
 //  Created by ST21235 on 2019/07/29.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class TakePhotoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

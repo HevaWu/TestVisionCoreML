@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  ChoosePhotoViewController.swift
 //  TestVisionCoreML
 //
 //  Created by ST21235 on 2019/07/29.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class ChoosePhotoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
