@@ -11,20 +11,35 @@ import CoreML
 import Vision
 
 class ChoosePhotoViewController: UIViewController {
-    @IBOutlet var imageView: UIImageView!
-    @IBAction func choosePhotoAction(_ sender: UIButton) {
+    @IBAction func chooseButtonAction(_ sender: UIButton) {
         presentPhotoPicker(sourceType: .photoLibrary)
     }
-    @IBOutlet var mlResultContainerView: UIStackView!
+    
+    @IBOutlet var imageView: UIImageView!
+    
+    @IBAction func imageClassifyAction(_ sender: UIButton) {
+        guard let image = imageView.image else {
+            mlResultContent.text = "Please select a photo first."
+            return
+        }
+        showImageClassifyResult(for: image)
+    }
+    
+    @IBAction func objectDetectAction(_ sender: UIButton) {
+        guard let image = imageView.image else {
+            mlResultContent.text = "Please select a photo first."
+            return
+        }
+        showObjectDetectResult(for: image)
+    }
+    
     @IBOutlet var mlResultContent: UILabel!
     
-    private lazy var coreMLRequest: VNCoreMLRequest = {
+    lazy var imageClassifyRequest: VNCoreMLRequest = {
         do {
-            // Use "MobileNet" model
-            // Could change the model at here.
             let model = try VNCoreMLModel(for: MobileNet().model)
             let request = VNCoreMLRequest(model: model, completionHandler: { [weak self] (request, error) in
-                self?.processCoreMLRequest(request, error: error)
+                self?.processImageClassifyRequest(request, error: error)
             })
             return request
         } catch {
@@ -45,7 +60,7 @@ class ChoosePhotoViewController: UIViewController {
         present(picker, animated: true, completion: nil)
     }
     
-    private func processCoreMLRequest(_ request: VNRequest, error: Error?) {
+    private func processImageClassifyRequest(_ request: VNRequest, error: Error?) {
         DispatchQueue.main.async { [unowned self] in
             guard let results = request.results else {
                 self.mlResultContent.text = "Unable to get model's result. \n\(error?.localizedDescription)"
@@ -66,7 +81,7 @@ class ChoosePhotoViewController: UIViewController {
         }
     }
     
-    private func showMLResults(for image: UIImage) {
+    private func showImageClassifyResult(for image: UIImage) {
         mlResultContent.text = "Analyzing..."
         let orientation = CGImagePropertyOrientation(image.imageOrientation)
         guard let ciImage = CIImage(image: image) else {
@@ -76,11 +91,15 @@ class ChoosePhotoViewController: UIViewController {
         DispatchQueue.global(qos: .userInitiated).async { [unowned self] in
             let handler = VNImageRequestHandler(ciImage: ciImage, orientation: orientation)
             do {
-                try handler.perform([self.coreMLRequest])
+                try handler.perform([self.imageClassifyRequest])
             } catch {
                 fatalError("Failed to perform classification. \n\(error.localizedDescription)")
             }
         }
+    }
+    
+    private func showObjectDetectResult(for image: UIImage) {
+        
     }
 }
 
@@ -93,6 +112,5 @@ extension ChoosePhotoViewController: UIImagePickerControllerDelegate, UINavigati
         
         let image = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
         imageView.image = image
-        showMLResults(for: image)
     }
 }

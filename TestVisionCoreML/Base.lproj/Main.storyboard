@@ -19,36 +19,55 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="6hF-aR-PQR">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <rect key="frame" x="5" y="44" width="404" height="769"/>
                                 <subviews>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Choose Photo" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wcf-ko-0mf">
+                                        <rect key="frame" x="0.0" y="0.0" width="404" height="55"/>
+                                        <color key="backgroundColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FHl-f6-V0F">
-                                        <rect key="frame" x="0.0" y="69" width="414" height="50.5"/>
-                                        <state key="normal" title="Image Classify"/>
+                                        <state key="normal" title="Choose Photo"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="choosePhotoAction:" destination="9pv-A4-QxB" eventType="touchUpInside" id="b9F-Ej-9Tn"/>
+                                            <action selector="chooseButtonAction:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Fmr-Qa-uIS"/>
                                         </connections>
                                     </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="0Ml-eS-ED7">
+                                        <rect key="frame" x="0.0" y="81" width="404" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FHl-f6-V0F">
+                                                <rect key="frame" x="0.0" y="0.0" width="282" height="30"/>
+                                                <state key="normal" title="Image Classify"/>
+                                                <connections>
+                                                    <action selector="imageClassifyAction:" destination="9pv-A4-QxB" eventType="touchUpInside" id="zOo-1m-CnV"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MI7-JK-jpt">
+                                                <rect key="frame" x="308" y="0.0" width="96" height="30"/>
+                                                <state key="normal" title="Object Detect"/>
+                                                <connections>
+                                                    <action selector="objectDetectAction:" destination="9pv-A4-QxB" eventType="touchUpInside" id="ag6-CV-FXy"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="WDn-u1-uLe">
-                                        <rect key="frame" x="0.0" y="145.5" width="414" height="551"/>
+                                        <rect key="frame" x="0.0" y="137" width="404" height="580.5"/>
                                     </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="UTF-k0-PTA">
-                                        <rect key="frame" x="0.0" y="722.5" width="414" height="46.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="UTF-k0-PTA">
+                                        <rect key="frame" x="0.0" y="743.5" width="404" height="25.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ML Result:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I7J-iF-rBT">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="404" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vv5-J0-eEt">
-                                                <rect key="frame" x="0.0" y="46.5" width="414" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="25.5" width="404" height="0.0"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -60,8 +79,8 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6hF-aR-PQR" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="5h3-72-61L"/>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="6hF-aR-PQR" secondAttribute="trailing" id="80K-Eg-fRY"/>
+                            <constraint firstItem="6hF-aR-PQR" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="5" id="5h3-72-61L"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="6hF-aR-PQR" secondAttribute="trailing" constant="5" id="80K-Eg-fRY"/>
                             <constraint firstItem="6hF-aR-PQR" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="I6f-m7-asV"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="6hF-aR-PQR" secondAttribute="bottom" id="mdp-t0-nBR"/>
                         </constraints>
@@ -70,7 +89,6 @@
                     <tabBarItem key="tabBarItem" title="Choose Photo" image="first" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="imageView" destination="WDn-u1-uLe" id="Qgp-FY-6zh"/>
-                        <outlet property="mlResultContainerView" destination="UTF-k0-PTA" id="zEx-B7-q38"/>
                         <outlet property="mlResultContent" destination="vv5-J0-eEt" id="cL5-Rz-b5x"/>
                     </connections>
                 </viewController>
