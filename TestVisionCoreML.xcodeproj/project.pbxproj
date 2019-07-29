@@ -10,12 +10,15 @@
 		F086771922EE963800B5AB21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F086771822EE963800B5AB21 /* AppDelegate.swift */; };
 		F086771B22EE963800B5AB21 /* ChoosePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F086771A22EE963800B5AB21 /* ChoosePhotoViewController.swift */; };
 		F086771D22EE963800B5AB21 /* TakePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F086771C22EE963800B5AB21 /* TakePhotoViewController.swift */; };
-		F086772022EE963800B5AB21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F086771E22EE963800B5AB21 /* Main.storyboard */; };
 		F086772222EE963900B5AB21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F086772122EE963900B5AB21 /* Assets.xcassets */; };
 		F086772522EE963900B5AB21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F086772322EE963900B5AB21 /* LaunchScreen.storyboard */; };
 		F086772D22EE9A6B00B5AB21 /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F086772C22EE9A6B00B5AB21 /* CGImagePropertyOrientation+UIImageOrientation.swift */; };
 		F086773222EEA24200B5AB21 /* YOLOv3Tiny.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F086773122EEA24200B5AB21 /* YOLOv3Tiny.mlmodel */; };
 		F086773422EEB73B00B5AB21 /* MobileNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F086773322EEB73B00B5AB21 /* MobileNet.mlmodel */; };
+		F086773722EED90300B5AB21 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F086773522EED90300B5AB21 /* BaseViewController.swift */; };
+		F086773822EED90300B5AB21 /* BaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F086773622EED90300B5AB21 /* BaseViewController.xib */; };
+		F086773A22EEF80100B5AB21 /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F086773922EEF80100B5AB21 /* MainTabViewController.swift */; };
+		F086773D22EF021100B5AB21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F086773B22EF021100B5AB21 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,13 +26,16 @@
 		F086771822EE963800B5AB21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F086771A22EE963800B5AB21 /* ChoosePhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosePhotoViewController.swift; sourceTree = "<group>"; };
 		F086771C22EE963800B5AB21 /* TakePhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakePhotoViewController.swift; sourceTree = "<group>"; };
-		F086771F22EE963800B5AB21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F086772122EE963900B5AB21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F086772422EE963900B5AB21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F086772622EE963900B5AB21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F086772C22EE9A6B00B5AB21 /* CGImagePropertyOrientation+UIImageOrientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGImagePropertyOrientation+UIImageOrientation.swift"; sourceTree = "<group>"; };
 		F086773122EEA24200B5AB21 /* YOLOv3Tiny.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = YOLOv3Tiny.mlmodel; sourceTree = "<group>"; };
 		F086773322EEB73B00B5AB21 /* MobileNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNet.mlmodel; sourceTree = "<group>"; };
+		F086773522EED90300B5AB21 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F086773622EED90300B5AB21 /* BaseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseViewController.xib; sourceTree = "<group>"; };
+		F086773922EEF80100B5AB21 /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
+		F086773C22EF021100B5AB21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +68,13 @@
 		F086771722EE963800B5AB21 /* TestVisionCoreML */ = {
 			isa = PBXGroup;
 			children = (
+				F086773522EED90300B5AB21 /* BaseViewController.swift */,
+				F086773622EED90300B5AB21 /* BaseViewController.xib */,
 				F086771822EE963800B5AB21 /* AppDelegate.swift */,
 				F086771A22EE963800B5AB21 /* ChoosePhotoViewController.swift */,
 				F086771C22EE963800B5AB21 /* TakePhotoViewController.swift */,
-				F086771E22EE963800B5AB21 /* Main.storyboard */,
+				F086773922EEF80100B5AB21 /* MainTabViewController.swift */,
+				F086773B22EF021100B5AB21 /* Main.storyboard */,
 				F086772C22EE9A6B00B5AB21 /* CGImagePropertyOrientation+UIImageOrientation.swift */,
 				F086773022EEA22C00B5AB21 /* CoreML Models */,
 				F086772122EE963900B5AB21 /* Assets.xcassets */,
@@ -143,8 +152,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F086772522EE963900B5AB21 /* LaunchScreen.storyboard in Resources */,
+				F086773822EED90300B5AB21 /* BaseViewController.xib in Resources */,
 				F086772222EE963900B5AB21 /* Assets.xcassets in Resources */,
-				F086772022EE963800B5AB21 /* Main.storyboard in Resources */,
+				F086773D22EF021100B5AB21 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,10 +166,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F086772D22EE9A6B00B5AB21 /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */,
+				F086773A22EEF80100B5AB21 /* MainTabViewController.swift in Sources */,
 				F086771D22EE963800B5AB21 /* TakePhotoViewController.swift in Sources */,
 				F086773422EEB73B00B5AB21 /* MobileNet.mlmodel in Sources */,
 				F086773222EEA24200B5AB21 /* YOLOv3Tiny.mlmodel in Sources */,
 				F086771922EE963800B5AB21 /* AppDelegate.swift in Sources */,
+				F086773722EED90300B5AB21 /* BaseViewController.swift in Sources */,
 				F086771B22EE963800B5AB21 /* ChoosePhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -167,20 +179,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F086771E22EE963800B5AB21 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F086771F22EE963800B5AB21 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F086772322EE963900B5AB21 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				F086772422EE963900B5AB21 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F086773B22EF021100B5AB21 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F086773C22EF021100B5AB21 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

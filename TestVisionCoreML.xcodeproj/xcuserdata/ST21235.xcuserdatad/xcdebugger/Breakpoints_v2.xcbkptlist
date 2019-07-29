@@ -4,19 +4,29 @@
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            scope = "0"
+            stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TestVisionCoreML/ChoosePhotoViewController.swift"
-            timestampString = "586077060.428268"
+            filePath = "TestVisionCoreML/MainTabViewController.swift"
+            timestampString = "586089029.880632"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "146"
-            endingLineNumber = "146"
-            landmarkName = "drawObjectDetectResults(_:)"
-            landmarkType = "7">
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "MainTabViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -26,12 +36,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TestVisionCoreML/ChoosePhotoViewController.swift"
-            timestampString = "586077060.428664"
+            timestampString = "586149352.591365"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "143"
-            endingLineNumber = "143"
-            landmarkName = "drawObjectDetectResults(_:)"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "setPhotoPickerButtonTitle()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -41,78 +51,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TestVisionCoreML/ChoosePhotoViewController.swift"
-            timestampString = "586077060.428872"
+            filePath = "TestVisionCoreML/TakePhotoViewController.swift"
+            timestampString = "586149352.5916131"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "139"
-            endingLineNumber = "139"
-            landmarkName = "drawObjectDetectResults(_:)"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "setPhotoPickerButtonTitle()"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TestVisionCoreML/ChoosePhotoViewController.swift"
-            timestampString = "586077060.429069"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "178"
-            endingLineNumber = "178"
-            landmarkName = "updateObjectDetectLayerTransit()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TestVisionCoreML/ChoosePhotoViewController.swift"
-            timestampString = "586077060.42927"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "117"
-            endingLineNumber = "117"
-            landmarkName = "processObjectDetectRequest(_:error:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in TestVisionCoreML.ChoosePhotoViewController.(processObjectDetectRequest in _C88839F77C2DB00668D49CD43A0DB8F9)(_: __C.VNRequest, error: Swift.Optional&lt;Swift.Error&gt;) -&gt; ()"
-                  moduleName = "TestVisionCoreML"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ST21235/Project/practice/TestVisionCoreML/TestVisionCoreML/ChoosePhotoViewController.swift"
-                  timestampString = "586076968.708321"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "118"
-                  endingLineNumber = "118"
-                  offsetFromSymbolStart = "1417">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 (Swift.Optional&lt;__C.VNClassificationObservation&gt;) -&gt; Swift.Optional&lt;Swift.String&gt; in closure #1 () -&gt; () in TestVisionCoreML.ChoosePhotoViewController.(processObjectDetectRequest in _C88839F77C2DB00668D49CD43A0DB8F9)(_: __C.VNRequest, error: Swift.Optional&lt;Swift.Error&gt;) -&gt; ()"
-                  moduleName = "TestVisionCoreML"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ST21235/Project/practice/TestVisionCoreML/TestVisionCoreML/ChoosePhotoViewController.swift"
-                  timestampString = "586076968.709586"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "119"
-                  endingLineNumber = "119"
-                  offsetFromSymbolStart = "72">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
