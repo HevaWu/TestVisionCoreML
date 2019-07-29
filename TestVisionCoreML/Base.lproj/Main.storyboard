@@ -29,15 +29,32 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FHl-f6-V0F">
-                                        <rect key="frame" x="0.0" y="69" width="414" height="30"/>
-                                        <state key="normal" title="Choose Photo Button"/>
+                                        <rect key="frame" x="0.0" y="69" width="414" height="50.5"/>
+                                        <state key="normal" title="Image Classify"/>
                                         <connections>
                                             <action selector="choosePhotoAction:" destination="9pv-A4-QxB" eventType="touchUpInside" id="b9F-Ej-9Tn"/>
                                         </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="WDn-u1-uLe">
-                                        <rect key="frame" x="0.0" y="125" width="414" height="644"/>
+                                        <rect key="frame" x="0.0" y="145.5" width="414" height="551"/>
                                     </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="UTF-k0-PTA">
+                                        <rect key="frame" x="0.0" y="722.5" width="414" height="46.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ML Result:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I7J-iF-rBT">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vv5-J0-eEt">
+                                                <rect key="frame" x="0.0" y="46.5" width="414" height="0.0"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -53,6 +70,8 @@
                     <tabBarItem key="tabBarItem" title="Choose Photo" image="first" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="imageView" destination="WDn-u1-uLe" id="Qgp-FY-6zh"/>
+                        <outlet property="mlResultContainerView" destination="UTF-k0-PTA" id="zEx-B7-q38"/>
+                        <outlet property="mlResultContent" destination="vv5-J0-eEt" id="cL5-Rz-b5x"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>

@@ -14,6 +14,8 @@
 		F086772222EE963900B5AB21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F086772122EE963900B5AB21 /* Assets.xcassets */; };
 		F086772522EE963900B5AB21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F086772322EE963900B5AB21 /* LaunchScreen.storyboard */; };
 		F086772D22EE9A6B00B5AB21 /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F086772C22EE9A6B00B5AB21 /* CGImagePropertyOrientation+UIImageOrientation.swift */; };
+		F086773222EEA24200B5AB21 /* YOLOv3Tiny.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F086773122EEA24200B5AB21 /* YOLOv3Tiny.mlmodel */; };
+		F086773422EEB73B00B5AB21 /* MobileNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F086773322EEB73B00B5AB21 /* MobileNet.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		F086772422EE963900B5AB21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F086772622EE963900B5AB21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F086772C22EE9A6B00B5AB21 /* CGImagePropertyOrientation+UIImageOrientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGImagePropertyOrientation+UIImageOrientation.swift"; sourceTree = "<group>"; };
+		F086773122EEA24200B5AB21 /* YOLOv3Tiny.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = YOLOv3Tiny.mlmodel; sourceTree = "<group>"; };
+		F086773322EEB73B00B5AB21 /* MobileNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNet.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,11 +67,21 @@
 				F086771C22EE963800B5AB21 /* TakePhotoViewController.swift */,
 				F086771E22EE963800B5AB21 /* Main.storyboard */,
 				F086772C22EE9A6B00B5AB21 /* CGImagePropertyOrientation+UIImageOrientation.swift */,
+				F086773022EEA22C00B5AB21 /* CoreML Models */,
 				F086772122EE963900B5AB21 /* Assets.xcassets */,
 				F086772322EE963900B5AB21 /* LaunchScreen.storyboard */,
 				F086772622EE963900B5AB21 /* Info.plist */,
 			);
 			path = TestVisionCoreML;
+			sourceTree = "<group>";
+		};
+		F086773022EEA22C00B5AB21 /* CoreML Models */ = {
+			isa = PBXGroup;
+			children = (
+				F086773122EEA24200B5AB21 /* YOLOv3Tiny.mlmodel */,
+				F086773322EEB73B00B5AB21 /* MobileNet.mlmodel */,
+			);
+			path = "CoreML Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +157,8 @@
 			files = (
 				F086772D22EE9A6B00B5AB21 /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */,
 				F086771D22EE963800B5AB21 /* TakePhotoViewController.swift in Sources */,
+				F086773422EEB73B00B5AB21 /* MobileNet.mlmodel in Sources */,
+				F086773222EEA24200B5AB21 /* YOLOv3Tiny.mlmodel in Sources */,
 				F086771922EE963800B5AB21 /* AppDelegate.swift in Sources */,
 				F086771B22EE963800B5AB21 /* ChoosePhotoViewController.swift in Sources */,
 			);
