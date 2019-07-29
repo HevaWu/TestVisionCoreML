@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  TestVisionCoreML
 //
-//  Created by ST21235 on 2019/07/29.
+//  Created by He Wu on 2019/07/29.
 //  Copyright © 2019 He Wu. All rights reserved.
 //
 

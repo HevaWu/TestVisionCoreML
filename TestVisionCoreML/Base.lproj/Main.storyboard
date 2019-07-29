@@ -28,8 +28,15 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FHl-f6-V0F">
+                                        <rect key="frame" x="0.0" y="69" width="414" height="30"/>
+                                        <state key="normal" title="Choose Photo Button"/>
+                                        <connections>
+                                            <action selector="choosePhotoAction:" destination="9pv-A4-QxB" eventType="touchUpInside" id="b9F-Ej-9Tn"/>
+                                        </connections>
+                                    </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="WDn-u1-uLe">
-                                        <rect key="frame" x="0.0" y="69" width="414" height="700"/>
+                                        <rect key="frame" x="0.0" y="125" width="414" height="644"/>
                                     </imageView>
                                 </subviews>
                             </stackView>
@@ -44,6 +51,9 @@
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Choose Photo" image="first" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="imageView" destination="WDn-u1-uLe" id="Qgp-FY-6zh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -67,8 +77,15 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YpV-sY-v4J">
+                                        <rect key="frame" x="0.0" y="69" width="414" height="30"/>
+                                        <state key="normal" title="Take Photo Button"/>
+                                        <connections>
+                                            <action selector="takePhotoAction:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="f4W-Ff-dSU"/>
+                                        </connections>
+                                    </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="UFY-hk-uTZ">
-                                        <rect key="frame" x="0.0" y="69" width="414" height="700"/>
+                                        <rect key="frame" x="0.0" y="125" width="414" height="644"/>
                                     </imageView>
                                 </subviews>
                             </stackView>
@@ -83,6 +100,9 @@
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Take Photo" image="second" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="imageView" destination="UFY-hk-uTZ" id="nvh-xw-wDn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
